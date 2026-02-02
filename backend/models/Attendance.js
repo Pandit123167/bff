@@ -8,7 +8,6 @@ const attendanceSchema = new mongoose.Schema(
       required: true,
     },
 
-    // ✅ Date should be Date type
     date: {
       type: Date,
       required: true,
@@ -20,7 +19,6 @@ const attendanceSchema = new mongoose.Schema(
       required: true,
     },
 
-    // ✅ Store employee name also (for delete case)
     employeeName: {
       type: String,
       required: true,

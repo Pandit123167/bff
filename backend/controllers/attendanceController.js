@@ -3,7 +3,7 @@ const Attendance = require("../models/Attendance");
 const Employee = require("../models/Employee");
 
 
-// ✅ Mark Attendance
+// Mark Attendance
 const markAttendance = async (req, res) => {
   try {
     const { employeeId, date, status } = req.body;
@@ -23,7 +23,7 @@ const markAttendance = async (req, res) => {
       return res.status(404).json({ message: "Employee not found!" });
     }
 
-    // ✅ Save Attendance with employeeName also
+    // Save Attendance with employeeName also
     const attendance = await Attendance.create({
       employee: employeeId,
       employeeName: employee.fullName,
@@ -43,7 +43,7 @@ const markAttendance = async (req, res) => {
 
 
 
-// ✅ Get All Attendance Records (with filters)
+// Get All Attendance Records (with filters)
 const getAllAttendance = async (req, res) => {
   try {
     const { employeeId, month } = req.query;
@@ -87,7 +87,7 @@ const getAllAttendance = async (req, res) => {
 
 
 
-// ✅ Monthly Summary with Employee + Month Filter
+// Monthly Summary with Employee + Month Filter
 const getMonthlySummary = async (req, res) => {
   try {
     const { employeeId, month, year } = req.query;
@@ -131,7 +131,7 @@ const getMonthlySummary = async (req, res) => {
 };
 
 
-// ✅ Get Attendance Records with Filters
+// Get Attendance Records with Filters
 const getFilteredAttendance = async (req, res) => {
   try {
     const { employeeId, month, year } = req.query;
@@ -162,7 +162,7 @@ const getFilteredAttendance = async (req, res) => {
 
 
 
-// ✅ Get Attendance By Employee
+// Get Attendance By Employee
 const getAttendanceByEmployee = async (req, res) => {
   try {
     const { employeeId } = req.params;

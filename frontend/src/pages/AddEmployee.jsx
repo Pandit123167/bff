@@ -15,7 +15,7 @@ export default function AddEmployee() {
     try {
       await API.post("/employees", form);
 
-      alert("✅ Employee Added Successfully!");
+      alert("Employee Added Successfully!");
 
       setForm({
         employeeId: "",

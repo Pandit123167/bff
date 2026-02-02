@@ -11,10 +11,10 @@ const router = express.Router();
 
 router.post("/", markAttendance);
 
-// ✅ Filters
+// Filters
 router.get("/", getFilteredAttendance);
 
-// ✅ Summary
+// Summary
 router.get("/summary", getMonthlySummary);
 
 // Employee specific

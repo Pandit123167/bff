@@ -28,12 +28,12 @@ export default function MarkAttendance() {
     e.preventDefault();
 
     if (!data.employeeId || !data.date || !data.status) {
-      return alert("⚠️ All fields are required!");
+      return alert("All fields are required!");
     }
 
     try {
       await API.post("/attendance", data);
-      alert("✅ Attendance Marked Successfully!");
+      alert("Attendance Marked Successfully!");
       setData({ employeeId: "", date: "", status: "Present" });
     } catch (err) {
       alert(err.response?.data?.message || "Error marking attendance");

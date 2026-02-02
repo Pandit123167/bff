@@ -39,7 +39,7 @@ export default function AttendanceRecords() {
         Attendance Records
       </h2>
 
-      {/* ✅ Filters */}
+      {/* Filters */}
       <div className="flex gap-4 mb-6">
         {/* Employee Dropdown */}
         <select
@@ -82,7 +82,7 @@ export default function AttendanceRecords() {
         </button>
       </div>
 
-      {/* ✅ Summary */}
+      {/* Summary */}
       <div className="flex gap-6 mb-4">
         <div className="bg-green-100 text-green-700 p-3 rounded">
           Present: <b>{summary.Present}</b> days
@@ -92,7 +92,7 @@ export default function AttendanceRecords() {
         </div>
       </div>
 
-      {/* ✅ Table */}
+      {/* Table */}
       <table className="w-full bg-white shadow rounded-lg overflow-hidden">
         <thead className="bg-blue-600 text-white">
           <tr>

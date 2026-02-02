@@ -1,6 +1,6 @@
 const Employee = require("../models/Employee");
 
-// ✅ Add New Employee
+// Add New Employee
 const addEmployee = async (req, res) => {
   try {
     const { employeeId, fullName, email, department } = req.body;
@@ -51,7 +51,7 @@ const addEmployee = async (req, res) => {
   }
 };
 
-// ✅ Get All Employees
+// Get All Employees
 const getEmployees = async (req, res) => {
   try {
     const employees = await Employee.find().sort({ createdAt: -1 });
@@ -65,7 +65,7 @@ const getEmployees = async (req, res) => {
   }
 };
 
-// ✅ Delete Employee
+// Delete Employee
 const deleteEmployee = async (req, res) => {
   try {
     const employee = await Employee.findById(req.params.id);

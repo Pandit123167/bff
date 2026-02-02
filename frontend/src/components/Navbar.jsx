@@ -35,14 +35,14 @@ export default function Navbar() {
                 to="/add-employee"
                 className="block px-4 py-2 hover:bg-gray-100"
               >
-                ➕ Add Employee
+                Add Employee
               </Link>
 
               <Link
                 to="/employees"
                 className="block px-4 py-2 hover:bg-gray-100"
               >
-                📋 Employee List
+                Employee List
               </Link>
             </div>
           )}
@@ -68,14 +68,14 @@ export default function Navbar() {
                 to="/mark-attendance"
                 className="block px-4 py-2 hover:bg-gray-100"
               >
-                📝 Mark Attendance
+                Mark Attendance
               </Link>
 
               <Link
                 to="/attendance"
                 className="block px-4 py-2 hover:bg-gray-100"
               >
-                📑 Attendance Records
+                Attendance Records
               </Link>
             </div>
           )}
